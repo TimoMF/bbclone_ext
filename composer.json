@@ -1,0 +1,24 @@
+{
+	"name": "timomf/bbclone_ext",
+	"type": "phpbb-extension",
+	"description": "bbclone_ext",
+	"homepage": "http://hard-soft.meyer-franke.com",
+	"version": "0.1.0",
+	"time": "2014-25-12",
+	"license": "GPL-2.0",
+	"authors": [{
+			"name": "Timo Meyer-Franke",
+			"email": "timo@meyer-franke.com",
+			"homepage": "http://hard-soft.meyer-franke.com",
+			"role": "Lead Developer"
+		}],
+	"require": {
+		"php": ">=5.3.3"
+	},
+	"extra": {
+		"display-name": "BBClone_EXT",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.1.0,<3.2.*@dev"
+		}
+	}
+}

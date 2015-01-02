@@ -1,0 +1,7 @@
+services:
+    timomf.bbclone_ext.listener:
+        class: timomf\bbclone_ext\event\listener
+        arguments:
+            - @request
+        tags:
+            - { name: event.listener }

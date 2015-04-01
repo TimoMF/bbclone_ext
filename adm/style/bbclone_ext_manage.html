@@ -1,0 +1,31 @@
+<!-- INCLUDE overall_header.html -->
+
+<h1>{L_BBCLONE_EXT}</h1>
+<p>{L_BBCLONE_EXT_EXPLAIN}</p>
+
+<form id="bbclone_ext" method="post" action="{U_ACTION}">
+
+	<fieldset>
+		<legend>{L_BBCLONE_DIR_OPTIONS}</legend>
+		<dl>
+			<dt><label for="bbclone_dir">{L_BBCLONE_DIR}{L_COLON}</label><br /><span>{L_BBCLONE_DIR_EXPLAIN}</span></dt>
+			<dd><input name="bbclone_dir" type="text" id="bbclone_dir" value="{bbclone_dir}" maxlength="255" validate="string"/></dd>
+		</dl>
+		<dl>
+			<dt><label for="bbclone_detail">{L_BBCLONE_DETAIL}{L_COLON}</label><br /><span>{L_BBCLONE_DETAIL_EXPLAIN}</span></dt>
+			<dd><label><input type="radio" class="radio" name="bbclone_detail" value="1" id="bbclone_detail"<!-- IF bbclone_detail --> checked="checked"<!-- ENDIF -->/> {L_YES}</label>
+				<label><input type="radio" class="radio" name="bbclone_detail" value="0" <!-- IF not bbclone_detail --> checked="checked"<!-- ENDIF --> /> {L_NO}</label></dd>
+		</dl> 
+	</fieldset>
+
+	<fieldset>
+		<legend>{L_ACP_SUBMIT_CHANGES}</legend>
+		<p class="submit-buttons">
+			<input class="button1" type="submit" id="submit" name="submit" value="{L_SUBMIT}" />&nbsp;
+			<input class="button2" type="reset" id="reset" name="reset" value="{L_RESET}" />
+		</p>
+		{S_FORM_TOKEN}
+	</fieldset>
+</form>
+
+<!-- INCLUDE overall_footer.html -->
